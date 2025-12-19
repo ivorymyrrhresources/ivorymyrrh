@@ -11,7 +11,7 @@ const Footer = () => {
             <Link to="/" aria-label="Ivorymyrrh home" className="group">
               <div>
                 <img
-                  src="https://i.ibb.co/G4RJTLMq/Ivory-Myrrh-1.png"
+                  src="https://i.ibb.co/4Z6sNmrM/Ivory-Myrrh-2.png"
                   alt="Ivorymyrrh"
                   width={203}
                   height={109}

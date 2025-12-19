@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Leaf } from 'lucide-react';
+import { Menu, X, Home, Info, Wrench, ShoppingBag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const navLinks = [
-  { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Services', path: '/services' },
-  { name: 'Products', path: '/products' },
+  { name: 'Home', path: '/', icon: Home },
+  { name: 'About', path: '/about', icon: Info },
+  { name: 'Services', path: '/services', icon: Wrench },
+  { name: 'Products', path: '/products', icon: ShoppingBag },
 ];
 
 const Header = () => {
@@ -41,10 +41,10 @@ const Header = () => {
             <motion.div
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.6 }}
-              className="shadow-glow overflow-hidden"
+              className="overflow-hidden"
             >
               <img
-                src="https://i.ibb.co/G4RJTLMq/Ivory-Myrrh-1.png"
+                src="https://i.ibb.co/4Z6sNmrM/Ivory-Myrrh-2.png"
                 alt="Ivorymyrrh"
                 width={203}
                 height={109}
@@ -104,18 +104,24 @@ const Header = () => {
             exit={{ opacity: 0, height: 0 }}
             className="lg:hidden glass-effect border-t border-border mt-3"
           >
-            <nav className="container mx-auto px-4 py-6 flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className={`text-base font-medium py-2 transition-colors ${
-                    location.pathname === link.path ? 'text-brand' : 'text-foreground'
-                  }`}
-                >
-                  {link.name}
-                </Link>
-              ))}
+            <nav className="container mx-auto px-4 py-6 flex flex-col gap-2">
+              {navLinks.map((link) => {
+                const IconComponent = link.icon;
+                return (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all ${
+                      location.pathname === link.path
+                        ? 'bg-brand/10 text-brand'
+                        : 'text-foreground hover:bg-muted'
+                    }`}
+                  >
+                    <IconComponent className="w-5 h-5" />
+                    <span className="font-medium">{link.name}</span>
+                  </Link>
+                );
+              })}
               <div className="flex flex-col gap-3 pt-4 border-t border-border">
                 <Button variant="outline" asChild>
                   <Link to="/get-quote">Get Quote</Link>
