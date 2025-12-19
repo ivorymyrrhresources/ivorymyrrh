@@ -1,0 +1,178 @@
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import SectionHeading from '@/components/common/SectionHeading';
+import tomatoesImg from '@/assets/products/tomatoes.jpg';
+import pepperImg from '@/assets/products/pepper.jpg';
+import onionImg from '@/assets/products/onion.jpg';
+import potatoesImg from '@/assets/products/potatoes.jpg';
+import yamImg from '@/assets/products/yam.jpg';
+import fishImg from '@/assets/products/fish.jpg';
+import cowsImg from '@/assets/products/cows.jpg';
+
+const products = [
+  {
+    name: 'Fresh Tomatoes',
+    image: tomatoesImg,
+    description: 'Premium vine-ripened tomatoes sourced directly from trusted farms. Perfect for cooking, salads, and processing.',
+    category: 'Vegetables',
+    features: ['Farm Fresh', 'Vine Ripened', 'Bulk Available'],
+  },
+  {
+    name: 'Pepper',
+    image: pepperImg,
+    description: 'Colorful assortment of bell peppers and fresh chili varieties. Great for spicing up your dishes.',
+    category: 'Vegetables',
+    features: ['Mixed Varieties', 'Fresh Daily', 'Wholesale Pricing'],
+  },
+  {
+    name: 'Onions',
+    image: onionImg,
+    description: 'Quality purple and white onions with excellent flavor profile. Essential for every kitchen.',
+    category: 'Vegetables',
+    features: ['Long Shelf Life', 'Premium Quality', 'Bulk Orders'],
+  },
+  {
+    name: 'Potatoes',
+    image: potatoesImg,
+    description: 'Fresh, high-quality potatoes ideal for frying, boiling, or baking. Consistently great taste.',
+    category: 'Tubers',
+    features: ['Farm Direct', 'Multiple Sizes', 'Quality Checked'],
+  },
+  {
+    name: 'Yam',
+    image: yamImg,
+    description: 'Premium African yam tubers known for their excellent taste and texture. A staple in many cuisines.',
+    category: 'Tubers',
+    features: ['Premium Grade', 'Fresh Harvest', 'Wholesale Available'],
+  },
+  {
+    name: 'Fresh Fish',
+    image: fishImg,
+    description: 'Fresh catch from trusted fishing communities. Properly stored and handled for maximum freshness.',
+    category: 'Seafood',
+    features: ['Daily Fresh', 'Ice Packed', 'Various Species'],
+  },
+  {
+    name: 'Cows',
+    image: cowsImg,
+    description: 'Healthy, well-fed livestock from quality farms. Available for purchase with optional butchering services.',
+    category: 'Livestock',
+    features: ['Health Certified', 'Various Breeds', 'Butchering Available'],
+  },
+];
+
+const categories = ['All', 'Vegetables', 'Tubers', 'Seafood', 'Livestock'];
+
+const Products = () => {
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-3xl mx-auto"
+          >
+            <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+              Our Products
+            </span>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Premium <span className="text-gradient-primary">Agricultural</span> Products
+            </h1>
+            <p className="text-lg text-muted-foreground">
+              Fresh produce and quality livestock sourced directly from trusted farms and suppliers.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Products Grid */}
+      <section className="pb-24">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {products.map((product, index) => (
+              <motion.div
+                key={product.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="group rounded-2xl overflow-hidden bg-card border border-border hover:border-primary/50 transition-colors"
+              >
+                <div className="aspect-square overflow-hidden relative">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="px-3 py-1 rounded-full bg-primary/90 text-primary-foreground text-xs font-medium">
+                      {product.category}
+                    </span>
+                  </div>
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{product.name}</h3>
+                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                    {product.description}
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {product.features.map((feature, i) => (
+                      <span
+                        key={i}
+                        className="px-2 py-1 rounded-lg bg-muted text-muted-foreground text-xs"
+                      >
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  <Button variant="outline" className="w-full" asChild>
+                    <Link to="/get-quote">Request Quote</Link>
+                  </Button>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24 bg-card">
+        <div className="container mx-auto px-4 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-2xl mx-auto"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Need a Custom Order?
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              We handle orders of all sizes. Contact us for bulk pricing and custom requirements.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button variant="hero" size="lg" asChild>
+                <Link to="/get-quote">
+                  Get a Quote <ArrowRight className="w-5 h-5" />
+                </Link>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <Link to="/about">Learn More About Us</Link>
+              </Button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Products;
