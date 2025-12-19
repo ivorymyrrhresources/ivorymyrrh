@@ -3,16 +3,15 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Leaf, Shield, Truck, Award, Star, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
-import heroImage from '@/assets/hero-farm.jpg';
-import tomatoesImg from '@/assets/products/tomatoes.jpg';
-import pepperImg from '@/assets/products/pepper.jpg';
-import onionImg from '@/assets/products/onion.jpg';
-import potatoesImg from '@/assets/products/potatoes.jpg';
-import yamImg from '@/assets/products/yam.jpg';
-import fishImg from '@/assets/products/fish.jpg';
-import cowsImg from '@/assets/products/cows.jpg';
-import butcheringImg from '@/assets/services/butchering.jpg';
-import processingImg from '@/assets/services/processing.jpg';
+const tomatoesImg = 'https://i.ibb.co/Mk0HxSTb/Ivorymyrrh-1-1.jpg';
+const pepperImg = 'https://i.ibb.co/vt6Vwcm/Ivorymyrrh-2-1.jpg';
+const onionImg = 'https://i.ibb.co/Sw9j025S/Ivorymyrrh-3-1.jpg';
+const potatoesImg = 'https://i.ibb.co/RksLH2Sg/Ivorymyrrh-4-1.jpg';
+const yamImg = 'https://i.ibb.co/bRD9Krkg/Ivorymyrrh-5-1.jpg';
+const fishImg = 'https://i.ibb.co/WvZ8j1d1/Ivorymyrrh-6-1.jpg';
+const cowsImg = 'https://i.ibb.co/3yJkYnw7/Ivorymyrrh-7-1.jpg';
+const butcheringImg = 'https://i.ibb.co/rKfZDkZd/Ivorymyrrh-8-1.jpg';
+const processingImg = 'https://i.ibb.co/b5DHNFTV/Ivorymyrrh-9-1.jpg';
 
 const products = [
   { name: 'Fresh Tomatoes', image: tomatoesImg, description: 'Vine-ripened, premium quality tomatoes' },
@@ -72,7 +71,7 @@ const Index = () => {
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={heroImage}
+            src="https://i.ibb.co/MdLJcPM/Ivorymyrrh.jpg"
             alt="Ivorymyrrh Resources Farm"
             className="w-full h-full object-cover"
           />
@@ -174,7 +173,7 @@ const Index = () => {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-lg font-semibold text-foreground mb-1">{product.name}</h3>
+                  <h3 className="text-lg font-semibold text-brand mb-1 transition-colors group-hover:text-foreground">{product.name}</h3>
                   <p className="text-sm text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     {product.description}
                   </p>
@@ -258,7 +257,7 @@ const Index = () => {
                 className="text-center p-6 rounded-2xl bg-background border border-border hover:border-primary/50 transition-colors group"
               >
                 <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <item.icon className="w-8 h-8 text-primary" />
+                  <item.icon className="w-8 h-8 text-brand" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
                 <p className="text-muted-foreground text-sm">{item.description}</p>
@@ -289,7 +288,7 @@ const Index = () => {
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-accent text-accent" />
+                    <Star key={i} className="w-5 h-5 fill-brand text-brand" />
                   ))}
                 </div>
                 <p className="text-foreground mb-6 leading-relaxed">"{testimonial.content}"</p>

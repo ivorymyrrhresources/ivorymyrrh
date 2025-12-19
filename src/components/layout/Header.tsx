@@ -37,20 +37,20 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/" aria-label="Ivorymyrrh home" className="group">
             <motion.div
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.6 }}
-              className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center shadow-glow"
+              className="shadow-glow overflow-hidden"
             >
-              <Leaf className="w-6 h-6 text-primary-foreground" />
+              <img
+                src="https://i.ibb.co/G4RJTLMq/Ivory-Myrrh-1.png"
+                alt="Ivorymyrrh"
+                width={203}
+                height={109}
+                className="object-contain"
+              />
             </motion.div>
-            <div className="flex flex-col">
-              <span className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
-                Ivorymyrrh
-              </span>
-              <span className="text-xs text-muted-foreground -mt-1">Resources Ltd</span>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -59,15 +59,15 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`relative text-sm font-medium transition-colors hover:text-primary ${
-                  location.pathname === link.path ? 'text-primary' : 'text-foreground'
-                }`}
+                className={`relative text-sm font-medium transition-colors hover:text-brand ${
+                    location.pathname === link.path ? 'text-brand' : 'text-foreground'
+                  }`}
               >
                 {link.name}
                 {location.pathname === link.path && (
                   <motion.div
                     layoutId="activeNav"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brand rounded-full"
                   />
                 )}
               </Link>
@@ -110,7 +110,7 @@ const Header = () => {
                   key={link.path}
                   to={link.path}
                   className={`text-base font-medium py-2 transition-colors ${
-                    location.pathname === link.path ? 'text-primary' : 'text-foreground'
+                    location.pathname === link.path ? 'text-brand' : 'text-foreground'
                   }`}
                 >
                   {link.name}

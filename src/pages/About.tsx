@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Target, Eye, Heart, Users, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
-import aboutTeamImg from '@/assets/about-team.jpg';
+const aboutTeamImg = 'https://i.ibb.co/MdLJcPM/Ivorymyrrh.jpg';
 
 const values = [
   {
@@ -95,7 +95,7 @@ const About = () => {
               className="p-8 lg:p-12 rounded-2xl bg-background border border-border"
             >
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
-                <Target className="w-8 h-8 text-primary" />
+                <Target className="w-8 h-8 text-brand" />
               </div>
               <h2 className="text-2xl font-bold text-foreground mb-4">Our Mission</h2>
               <p className="text-muted-foreground leading-relaxed">
@@ -148,7 +148,7 @@ const About = () => {
                 className="text-center p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-colors"
               >
                 <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
-                  <value.icon className="w-10 h-10 text-primary" />
+                  <value.icon className="w-10 h-10 text-brand" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-3">{value.title}</h3>
                 <p className="text-muted-foreground">{value.description}</p>
@@ -185,7 +185,7 @@ const About = () => {
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     className="flex items-start gap-3"
                   >
-                    <CheckCircle className="w-6 h-6 text-primary shrink-0 mt-0.5" />
+                    <CheckCircle className="w-6 h-6 text-brand shrink-0 mt-0.5" />
                     <span className="text-foreground">{promise}</span>
                   </motion.li>
                 ))}

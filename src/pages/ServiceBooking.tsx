@@ -63,7 +63,7 @@ const ServiceBooking = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://formspree.io/f/xpwzjqkl', {
+      const response = await fetch('https://formspree.io/f/xlgrdday', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

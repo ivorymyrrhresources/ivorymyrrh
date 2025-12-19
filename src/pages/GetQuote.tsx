@@ -65,7 +65,7 @@ const GetQuote = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://formspree.io/f/xpwzjqkl', {
+      const response = await fetch('https://formspree.io/f/xeejoody', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

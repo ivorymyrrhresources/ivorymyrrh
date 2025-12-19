@@ -13,13 +13,13 @@ const BookingSuccess = () => {
           transition={{ duration: 0.5 }}
           className="max-w-lg mx-auto text-center"
         >
-          <motion.div
+            <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
             className="w-24 h-24 mx-auto mb-8 rounded-full bg-primary/10 flex items-center justify-center"
           >
-            <Calendar className="w-12 h-12 text-primary" />
+            <Calendar className="w-12 h-12 text-brand" />
           </motion.div>
 
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">

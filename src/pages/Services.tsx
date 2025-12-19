@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Shield, Users, Building, Store } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
-import butcheringImg from '@/assets/services/butchering.jpg';
-import processingImg from '@/assets/services/processing.jpg';
+const butcheringImg = 'https://i.ibb.co/rKfZDkZd/Ivorymyrrh-8-1.jpg';
+const processingImg = 'https://i.ibb.co/b5DHNFTV/Ivorymyrrh-9-1.jpg';
 
 const services = [
   {
@@ -104,7 +104,7 @@ const Services = () => {
                 <ul className="space-y-3 mb-8">
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-primary shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-brand shrink-0" />
                       <span className="text-foreground">{feature}</span>
                     </li>
                   ))}
@@ -132,7 +132,7 @@ const Services = () => {
               transition={{ duration: 0.6 }}
             >
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
-                <Shield className="w-8 h-8 text-primary" />
+                <Shield className="w-8 h-8 text-brand" />
               </div>
               <h2 className="text-3xl font-bold text-foreground mb-4">
                 Our Hygiene Standards
@@ -152,7 +152,7 @@ const Services = () => {
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     className="flex items-center gap-3 p-4 rounded-xl bg-background border border-border"
                   >
-                    <CheckCircle className="w-5 h-5 text-primary shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-brand shrink-0" />
                     <span className="text-sm text-foreground">{standard}</span>
                   </motion.div>
                 ))}
@@ -166,11 +166,12 @@ const Services = () => {
               transition={{ duration: 0.6 }}
               className="relative"
             >
-              <div className="aspect-square rounded-2xl bg-gradient-primary p-12 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-7xl font-bold text-primary-foreground mb-4">100%</div>
-                  <div className="text-xl text-primary-foreground/80">Hygiene Compliance</div>
-                </div>
+              <div className="rounded-2xl overflow-hidden shadow-elevated">
+                <img
+                  src="https://i.ibb.co/5h1VjPhb/Ivory-Myrrh-1.jpg"
+                  alt="Hygiene Standards"
+                  className="w-full h-full object-cover aspect-square"
+                />
               </div>
             </motion.div>
           </div>
@@ -197,7 +198,7 @@ const Services = () => {
                 className="p-8 rounded-2xl bg-card border border-border text-center hover:border-primary/50 transition-colors"
               >
                 <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-primary/10 flex items-center justify-center">
-                  <customer.icon className="w-8 h-8 text-primary" />
+                  <customer.icon className="w-8 h-8 text-brand" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-3">{customer.title}</h3>
                 <p className="text-muted-foreground">{customer.description}</p>

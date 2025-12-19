@@ -8,13 +8,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-6">
-            <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold text-foreground">Ivorymyrrh</span>
-                <span className="text-xs text-muted-foreground -mt-1">Resources Ltd</span>
+            <Link to="/" aria-label="Ivorymyrrh home" className="group">
+              <div>
+                <img
+                  src="https://i.ibb.co/G4RJTLMq/Ivory-Myrrh-1.png"
+                  alt="Ivorymyrrh"
+                  width={203}
+                  height={109}
+                  className="object-contain"
+                />
               </div>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -78,19 +80,19 @@ const Footer = () => {
             <h3 className="text-foreground font-semibold mb-6">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                <MapPin className="w-5 h-5 text-brand mt-0.5 shrink-0" />
                 <span className="text-muted-foreground text-sm">
                   123 Agro Lane, Farm District, Lagos, Nigeria
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-primary shrink-0" />
+                <Phone className="w-5 h-5 text-brand shrink-0" />
                 <a href="tel:+2348012345678" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                   +234 801 234 5678
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-primary shrink-0" />
+                <Mail className="w-5 h-5 text-brand shrink-0" />
                 <a href="mailto:info@ivorymyrrh.com" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                   info@ivorymyrrh.com
                 </a>

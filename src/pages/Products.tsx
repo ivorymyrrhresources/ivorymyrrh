@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
-import tomatoesImg from '@/assets/products/tomatoes.jpg';
-import pepperImg from '@/assets/products/pepper.jpg';
-import onionImg from '@/assets/products/onion.jpg';
-import potatoesImg from '@/assets/products/potatoes.jpg';
-import yamImg from '@/assets/products/yam.jpg';
-import fishImg from '@/assets/products/fish.jpg';
-import cowsImg from '@/assets/products/cows.jpg';
+const tomatoesImg = 'https://i.ibb.co/Mk0HxSTb/Ivorymyrrh-1-1.jpg';
+const pepperImg = 'https://i.ibb.co/vt6Vwcm/Ivorymyrrh-2-1.jpg';
+const onionImg = 'https://i.ibb.co/Sw9j025S/Ivorymyrrh-3-1.jpg';
+const potatoesImg = 'https://i.ibb.co/RksLH2Sg/Ivorymyrrh-4-1.jpg';
+const yamImg = 'https://i.ibb.co/bRD9Krkg/Ivorymyrrh-5-1.jpg';
+const fishImg = 'https://i.ibb.co/WvZ8j1d1/Ivorymyrrh-6-1.jpg';
+const cowsImg = 'https://i.ibb.co/3yJkYnw7/Ivorymyrrh-7-1.jpg';
 
 const products = [
   {
