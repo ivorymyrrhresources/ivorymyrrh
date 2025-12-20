@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Shield, Users, Building, Store } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
-import grindingImg from '@/assets/services/grinding.jpg';
 
 const butcheringImg = 'https://i.ibb.co/rKfZDkZd/Ivorymyrrh-8-1.jpg';
-const processingImg = 'https://i.ibb.co/b5DHNFTV/Ivorymyrrh-9-1.jpg';
+const processingImg = 'https://i.ibb.co/8gqcrnTD/Ivorymyrrh-11-1.jpg';
+const grindingImg = 'https://i.ibb.co/bjBbQdQN/Ivorymyrrh-17-1.jpg';
 
 const services = [
   {

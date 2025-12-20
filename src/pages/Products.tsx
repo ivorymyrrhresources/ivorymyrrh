@@ -63,7 +63,7 @@ const products = [
     features: ['Daily Fresh', 'Ice Packed', 'Various Species'],
   },
   {
-    name: 'Dried Fish',
+    name: 'Dried Catfish',
     image: driedFishImg,
     description: 'Traditionally smoked and dried fish with rich flavor. Long shelf life and perfect for stews and soups.',
     category: 'Seafood',
