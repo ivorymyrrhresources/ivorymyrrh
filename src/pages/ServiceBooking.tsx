@@ -16,6 +16,7 @@ const serviceTypes = [
   'Meat Processing - Standard',
   'Meat Processing - Premium',
   'Full Service (Butchering + Processing)',
+  'Pepper Grinding Service',
 ];
 
 const bookingSchema = z.object({
