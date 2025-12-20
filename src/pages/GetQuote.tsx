@@ -17,7 +17,14 @@ const products = [
   'Potatoes',
   'Yam',
   'Fish',
+  'Dried Fish',
+  'Goat Meat',
   'Cows',
+  'Rice',
+  'Beans',
+  'Garri',
+  'Red Palm Oil',
+  'Groundnut Oil',
 ];
 
 const quoteSchema = z.object({

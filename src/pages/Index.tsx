@@ -4,10 +4,6 @@ import { ArrowRight, Leaf, Shield, Truck, Award, Star, CheckCircle } from 'lucid
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
 import grindingImg from '@/assets/services/grinding.jpg';
-import riceImg from '@/assets/products/rice.jpg';
-import beansImg from '@/assets/products/beans.jpg';
-import driedFishImg from '@/assets/products/dried-fish.jpg';
-import goatMeatImg from '@/assets/products/goat-meat.jpg';
 
 const tomatoesImg = 'https://i.ibb.co/Mk0HxSTb/Ivorymyrrh-1-1.jpg';
 const pepperImg = 'https://i.ibb.co/vt6Vwcm/Ivorymyrrh-2-1.jpg';
@@ -26,11 +22,6 @@ const products = [
   { name: 'Potatoes', image: potatoesImg, description: 'Quality farm-fresh potatoes' },
   { name: 'Yam', image: yamImg, description: 'Premium African yam tubers' },
   { name: 'Fish', image: fishImg, description: 'Fresh catch from trusted sources' },
-  { name: 'Dried Fish', image: driedFishImg, description: 'Smoked and dried fish' },
-  { name: 'Goat Meat', image: goatMeatImg, description: 'Fresh quality goat meat' },
-  { name: 'Rice', image: riceImg, description: 'Premium quality rice' },
-  { name: 'Beans', image: beansImg, description: 'Nutritious honey beans' },
-  { name: 'Cows', image: cowsImg, description: 'Healthy, well-fed livestock' },
 ];
 
 const services = [
@@ -221,17 +212,17 @@ const Index = () => {
             description="Expert butchering and meat processing services with the highest hygiene standards."
           />
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <motion.div
                 key={service.title}
-                initial={{ opacity: 0, x: index === 0 ? -30 : 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="group relative rounded-2xl overflow-hidden"
               >
-                <div className="aspect-video overflow-hidden">
+                <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -239,10 +230,10 @@ const Index = () => {
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-2">{service.title}</h3>
-                  <p className="text-muted-foreground mb-4">{service.description}</p>
-                  <Button variant="hero" asChild>
+                <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
+                  <h3 className="text-lg md:text-xl font-bold text-foreground mb-1 md:mb-2 line-clamp-2">{service.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-3 line-clamp-2">{service.description}</p>
+                  <Button variant="hero" size="sm" asChild>
                     <Link to="/service-booking">Book Now</Link>
                   </Button>
                 </div>
