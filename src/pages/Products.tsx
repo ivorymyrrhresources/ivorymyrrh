@@ -11,13 +11,13 @@ const potatoesImg = 'https://i.ibb.co/RksLH2Sg/Ivorymyrrh-4-1.jpg';
 const yamImg = 'https://i.ibb.co/bRD9Krkg/Ivorymyrrh-5-1.jpg';
 const fishImg = 'https://i.ibb.co/WvZ8j1d1/Ivorymyrrh-6-1.jpg';
 const cowsImg = 'https://i.ibb.co/3yJkYnw7/Ivorymyrrh-7-1.jpg';
-import driedFishImg from '@/assets/products/dried-fish.jpg';
-import goatMeatImg from '@/assets/products/goat-meat.jpg';
-import riceImg from '@/assets/products/rice.jpg';
-import beansImg from '@/assets/products/beans.jpg';
-import garriImg from '@/assets/products/garri.jpg';
-import palmOilImg from '@/assets/products/palm-oil.jpg';
-import groundnutOilImg from '@/assets/products/groundnut-oil.jpg';
+const driedFishImg = 'https://i.ibb.co/fzSx21gc/Ivorymyrrh-10-1.jpg';
+const goatMeatImg = 'https://i.ibb.co/B2bNyHdV/Ivorymyrrh-11-1.jpg';
+const riceImg = 'https://i.ibb.co/ccfj7bqn/Ivorymyrrh-12-1.jpg';
+const beansImg = 'https://i.ibb.co/tM5LWws3/Ivorymyrrh-13-1.jpg';
+const garriImg = 'https://i.ibb.co/B2Vrg8dv/Ivorymyrrh-14-1.jpg';
+const palmOilImg = 'https://i.ibb.co/sJNY3pqg/Ivorymyrrh-15-1.jpg';
+const groundnutOilImg = 'https://i.ibb.co/4wvK1jhv/Ivorymyrrh-16-1.jpg';
 
 const products = [
   {
