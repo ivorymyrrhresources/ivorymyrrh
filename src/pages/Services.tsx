@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Shield, Users, Building, Store } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
+import grindingImg from '@/assets/services/grinding.jpg';
+
 const butcheringImg = 'https://i.ibb.co/rKfZDkZd/Ivorymyrrh-8-1.jpg';
 const processingImg = 'https://i.ibb.co/b5DHNFTV/Ivorymyrrh-9-1.jpg';
 
@@ -29,6 +31,18 @@ const services = [
       'Custom packaging options',
       'Quality assurance at every step',
       'Bulk processing available',
+    ],
+  },
+  {
+    title: 'Pepper Grinding Services',
+    description: 'Fast and efficient pepper grinding using multiple industrial grinding machines. Fresh grinding for all your cooking needs.',
+    image: grindingImg,
+    features: [
+      'Multiple grinding machines available',
+      'Fast turnaround time',
+      'Various grinding textures available',
+      'Fresh grinding on-site',
+      'Affordable pricing',
     ],
   },
 ];
@@ -64,10 +78,10 @@ const Services = () => {
               Our Services
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Professional <span className="text-gradient-primary">Meat Processing</span> Services
+              Professional <span className="text-gradient-primary">Processing</span> Services
             </h1>
             <p className="text-lg text-muted-foreground">
-              Expert butchering and processing services with the highest standards of hygiene and quality.
+              Expert butchering, meat processing, and pepper grinding services with the highest standards of hygiene and quality.
             </p>
           </motion.div>
         </div>

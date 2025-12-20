@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
+
 const tomatoesImg = 'https://i.ibb.co/Mk0HxSTb/Ivorymyrrh-1-1.jpg';
 const pepperImg = 'https://i.ibb.co/vt6Vwcm/Ivorymyrrh-2-1.jpg';
 const onionImg = 'https://i.ibb.co/Sw9j025S/Ivorymyrrh-3-1.jpg';
@@ -10,6 +11,13 @@ const potatoesImg = 'https://i.ibb.co/RksLH2Sg/Ivorymyrrh-4-1.jpg';
 const yamImg = 'https://i.ibb.co/bRD9Krkg/Ivorymyrrh-5-1.jpg';
 const fishImg = 'https://i.ibb.co/WvZ8j1d1/Ivorymyrrh-6-1.jpg';
 const cowsImg = 'https://i.ibb.co/3yJkYnw7/Ivorymyrrh-7-1.jpg';
+import driedFishImg from '@/assets/products/dried-fish.jpg';
+import goatMeatImg from '@/assets/products/goat-meat.jpg';
+import riceImg from '@/assets/products/rice.jpg';
+import beansImg from '@/assets/products/beans.jpg';
+import garriImg from '@/assets/products/garri.jpg';
+import palmOilImg from '@/assets/products/palm-oil.jpg';
+import groundnutOilImg from '@/assets/products/groundnut-oil.jpg';
 
 const products = [
   {
@@ -55,15 +63,64 @@ const products = [
     features: ['Daily Fresh', 'Ice Packed', 'Various Species'],
   },
   {
+    name: 'Dried Fish',
+    image: driedFishImg,
+    description: 'Traditionally smoked and dried fish with rich flavor. Long shelf life and perfect for stews and soups.',
+    category: 'Seafood',
+    features: ['Smoke Dried', 'Long Lasting', 'Bulk Available'],
+  },
+  {
     name: 'Cows',
     image: cowsImg,
     description: 'Healthy, well-fed livestock from quality farms. Available for purchase with optional butchering services.',
     category: 'Livestock',
     features: ['Health Certified', 'Various Breeds', 'Butchering Available'],
   },
+  {
+    name: 'Goat Meat',
+    image: goatMeatImg,
+    description: 'Premium quality goat meat from well-raised livestock. Fresh cuts available for all culinary needs.',
+    category: 'Livestock',
+    features: ['Fresh Cuts', 'Quality Assured', 'Custom Portions'],
+  },
+  {
+    name: 'Rice',
+    image: riceImg,
+    description: 'Premium quality rice sourced from trusted suppliers. Perfect for everyday meals and bulk orders.',
+    category: 'Grains',
+    features: ['Premium Grade', 'Multiple Varieties', 'Bulk Pricing'],
+  },
+  {
+    name: 'Beans',
+    image: beansImg,
+    description: 'Quality beans including honey beans and black-eyed peas. Nutritious and essential for Nigerian cuisine.',
+    category: 'Grains',
+    features: ['Multiple Varieties', 'Nutritious', 'Wholesale Available'],
+  },
+  {
+    name: 'Garri',
+    image: garriImg,
+    description: 'Premium cassava flakes processed to perfection. A staple food with versatile uses in Nigerian cuisine.',
+    category: 'Processed',
+    features: ['Premium Quality', 'Well Processed', 'Bulk Orders'],
+  },
+  {
+    name: 'Red Palm Oil',
+    image: palmOilImg,
+    description: 'Pure, naturally extracted red palm oil. Essential for authentic Nigerian cooking and recipes.',
+    category: 'Oils',
+    features: ['100% Pure', 'Natural Extract', 'Bulk Available'],
+  },
+  {
+    name: 'Groundnut Oil',
+    image: groundnutOilImg,
+    description: 'High-quality groundnut (peanut) oil perfect for cooking and frying. Rich flavor and healthy choice.',
+    category: 'Oils',
+    features: ['Premium Quality', 'Cold Pressed', 'Wholesale Pricing'],
+  },
 ];
 
-const categories = ['All', 'Vegetables', 'Tubers', 'Seafood', 'Livestock'];
+const categories = ['All', 'Vegetables', 'Tubers', 'Seafood', 'Livestock', 'Grains', 'Processed', 'Oils'];
 
 const Products = () => {
   return (
@@ -84,7 +141,7 @@ const Products = () => {
               Premium <span className="text-gradient-primary">Agricultural</span> Products
             </h1>
             <p className="text-lg text-muted-foreground">
-              Fresh produce and quality livestock sourced directly from trusted farms and suppliers.
+              Fresh produce, quality livestock, grains, and oils sourced directly from trusted farms and suppliers.
             </p>
           </motion.div>
         </div>
@@ -100,7 +157,7 @@ const Products = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
                 className="group rounded-2xl overflow-hidden bg-card border border-border hover:border-primary/50 transition-colors"
               >
                 <div className="aspect-square overflow-hidden relative">
@@ -143,8 +200,39 @@ const Products = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Export Services Section */}
       <section className="py-24 bg-card">
+        <div className="container mx-auto px-4 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-3xl mx-auto"
+          >
+            <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-primary/10 flex items-center justify-center">
+              <Globe className="w-10 h-10 text-brand" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              We Export <span className="text-gradient-primary">Worldwide</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Ivorymyrrh Resources Ltd is open to the export of agro products and processed meat 
+              to clients anywhere in the world. We handle international logistics and ensure 
+              your products arrive fresh and on time.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button variant="hero" size="lg" asChild>
+                <Link to="/get-quote">
+                  Request Export Quote <ArrowRight className="w-5 h-5" />
+                </Link>
+              </Button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

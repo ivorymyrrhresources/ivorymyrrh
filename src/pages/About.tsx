@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Target, Eye, Heart, Users, CheckCircle, ArrowRight } from 'lucide-react';
+import { Target, Eye, Heart, Users, CheckCircle, ArrowRight, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
 const aboutTeamImg = 'https://i.ibb.co/MdLJcPM/Ivorymyrrh.jpg';
@@ -29,7 +29,7 @@ const promises = [
   'Timely delivery and reliable service',
   'Competitive and transparent pricing',
   'Professional customer support at all times',
-  'Continuous improvement in our services',
+  'Worldwide export services available',
 ];
 
 const About = () => {
@@ -213,6 +213,38 @@ const About = () => {
               </Button>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Export Services */}
+      <section className="py-24">
+        <div className="container mx-auto px-4 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-3xl mx-auto"
+          >
+            <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-primary/10 flex items-center justify-center">
+              <Globe className="w-10 h-10 text-brand" />
+            </div>
+            <span className="inline-block px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-medium mb-6">
+              International Reach
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              We Export <span className="text-gradient-primary">Worldwide</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Ivorymyrrh Resources Ltd is open to the export of agro products and processed meat 
+              to clients anywhere in the world. Whether you need fresh produce, processed goods, 
+              or livestock products, we can deliver to your location with reliable international logistics.
+            </p>
+            <Button variant="hero" size="lg" asChild>
+              <Link to="/get-quote">
+                Request Export Quote <ArrowRight className="w-5 h-5" />
+              </Link>
+            </Button>
+          </motion.div>
         </div>
       </section>
     </>
