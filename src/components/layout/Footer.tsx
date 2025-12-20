@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Leaf, Mail, Phone, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -62,7 +62,7 @@ const Footer = () => {
           <div>
             <h3 className="text-foreground font-semibold mb-6">Our Products</h3>
             <ul className="space-y-3">
-              {['Fresh Tomatoes', 'Pepper', 'Onions', 'Potatoes', 'Yam', 'Fish', 'Cows'].map((product) => (
+              {['Fresh Tomatoes', 'Pepper', 'Onions', 'Potatoes', 'Yam', 'Fish', 'Dried Fish', 'Goat Meat', 'Rice', 'Beans', 'Garri', 'Palm Oil'].map((product) => (
                 <li key={product}>
                   <Link
                     to="/products"
@@ -82,14 +82,19 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-brand mt-0.5 shrink-0" />
                 <span className="text-muted-foreground text-sm">
-                  123 Agro Lane, Farm District, Lagos, Nigeria
+                  1 Uleaviu Golden Street, Selewu Teacher Quarter, Igbogbo, Ikorodu, Lagos, Nigeria
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-brand shrink-0" />
-                <a href="tel:+2348012345678" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-                  +234 801 234 5678
-                </a>
+                <div className="flex flex-col">
+                  <a href="tel:+2347051712618" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                    +234 705 171 2618 (WhatsApp)
+                  </a>
+                  <a href="tel:09056535430" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                    090 5653 5430
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-brand shrink-0" />

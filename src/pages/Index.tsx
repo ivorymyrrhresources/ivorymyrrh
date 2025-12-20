@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Leaf, Shield, Truck, Award, Star, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
+import grindingImg from '@/assets/services/grinding.jpg';
+import riceImg from '@/assets/products/rice.jpg';
+import beansImg from '@/assets/products/beans.jpg';
+import driedFishImg from '@/assets/products/dried-fish.jpg';
+import goatMeatImg from '@/assets/products/goat-meat.jpg';
+
 const tomatoesImg = 'https://i.ibb.co/Mk0HxSTb/Ivorymyrrh-1-1.jpg';
 const pepperImg = 'https://i.ibb.co/vt6Vwcm/Ivorymyrrh-2-1.jpg';
 const onionImg = 'https://i.ibb.co/Sw9j025S/Ivorymyrrh-3-1.jpg';
@@ -20,6 +26,10 @@ const products = [
   { name: 'Potatoes', image: potatoesImg, description: 'Quality farm-fresh potatoes' },
   { name: 'Yam', image: yamImg, description: 'Premium African yam tubers' },
   { name: 'Fish', image: fishImg, description: 'Fresh catch from trusted sources' },
+  { name: 'Dried Fish', image: driedFishImg, description: 'Smoked and dried fish' },
+  { name: 'Goat Meat', image: goatMeatImg, description: 'Fresh quality goat meat' },
+  { name: 'Rice', image: riceImg, description: 'Premium quality rice' },
+  { name: 'Beans', image: beansImg, description: 'Nutritious honey beans' },
   { name: 'Cows', image: cowsImg, description: 'Healthy, well-fed livestock' },
 ];
 
@@ -33,6 +43,11 @@ const services = [
     title: 'Meat Processing',
     description: 'Hygienic processing facilities ensuring the highest quality standards.',
     image: processingImg,
+  },
+  {
+    title: 'Pepper Grinding',
+    description: 'Multiple grinding machines for fast, efficient pepper grinding services.',
+    image: grindingImg,
   },
 ];
 
