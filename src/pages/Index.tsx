@@ -254,8 +254,10 @@ const Index = () => {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-lg font-semibold text-brand mb-1 transition-colors group-hover:text-foreground">{product.name}</h3>
-                  <p className="text-sm text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="bg-background/80 backdrop-blur-sm rounded-lg px-4 py-2 inline-block">
+                    <h3 className="text-lg font-semibold text-accent mb-1 transition-colors group-hover:text-accent">{product.name}</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-2">
                     {product.description}
                   </p>
                 </div>
