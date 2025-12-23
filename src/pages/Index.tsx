@@ -211,8 +211,8 @@ const Index = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-card">
                 <img
-                  src={cowsImg}
-                  alt="Ivorymyrrh Resources - Premium Livestock"
+                  src="https://i.ibb.co/tMwrRYGd/Ivory-Myrrh-2.jpg"
+                  alt="Ivorymyrrh Resources - Agricultural Products"
                   className="w-full h-[400px] lg:h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
