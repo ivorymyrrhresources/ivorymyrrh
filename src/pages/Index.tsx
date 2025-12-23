@@ -150,6 +150,81 @@ const Index = () => {
         </motion.div>
       </section>
 
+      {/* About Us Preview Section */}
+      <section className="py-24 bg-card">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left Column - Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+                About Us
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 leading-tight">
+                Your Trusted Partner in <span className="text-gradient-primary">Agricultural Excellence</span>
+              </h2>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Ivorymyrrh Resources Ltd is a registered Nigerian company dedicated to supplying premium agricultural products and professional meat processing services. We bridge the gap between farms and consumers with integrity, quality, and reliability.
+              </p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-brand shrink-0 mt-0.5" />
+                  <p className="text-muted-foreground">Fresh produce sourced directly from trusted local farms</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-brand shrink-0 mt-0.5" />
+                  <p className="text-muted-foreground">Professional butchering and meat processing services</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-brand shrink-0 mt-0.5" />
+                  <p className="text-muted-foreground">Nationwide delivery and export capabilities</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4 mb-8 p-4 rounded-xl bg-background border border-border">
+                <Shield className="w-10 h-10 text-brand shrink-0" />
+                <div>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider">CAC Registered</p>
+                  <p className="text-lg font-semibold text-foreground">RC NO. 8524204</p>
+                </div>
+              </div>
+
+              <Button variant="hero" size="lg" asChild>
+                <Link to="/about">
+                  Learn More About Us <ArrowRight className="w-5 h-5" />
+                </Link>
+              </Button>
+            </motion.div>
+
+            {/* Right Column - Image */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-card">
+                <img
+                  src={cowsImg}
+                  alt="Ivorymyrrh Resources - Premium Livestock"
+                  className="w-full h-[400px] lg:h-[500px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
+              </div>
+              {/* Decorative element */}
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/10 rounded-2xl -z-10" />
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-primary/20 rounded-2xl -z-10" />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Products Section */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
