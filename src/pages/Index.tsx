@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Leaf, Shield, Truck, Award, Star, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
-import grindingImg from '@/assets/services/grinding.jpg';
 
 const tomatoesImg = 'https://i.ibb.co/Mk0HxSTb/Ivorymyrrh-1-1.jpg';
+const grindingImg = 'https://i.ibb.co/99sfCYCz/Ivorymyrrh-17-1.jpg';
 const pepperImg = 'https://i.ibb.co/vt6Vwcm/Ivorymyrrh-2-1.jpg';
 const onionImg = 'https://i.ibb.co/Sw9j025S/Ivorymyrrh-3-1.jpg';
 const potatoesImg = 'https://i.ibb.co/RksLH2Sg/Ivorymyrrh-4-1.jpg';

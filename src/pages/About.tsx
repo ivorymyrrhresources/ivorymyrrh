@@ -55,10 +55,14 @@ const About = () => {
                 professional meat processing services. With years of industry experience, we have 
                 built a reputation for quality, reliability, and customer satisfaction.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed mb-6">
                 From fresh tomatoes and vegetables to quality livestock and expert butchering services, 
                 we are committed to meeting the diverse needs of our clients with excellence and integrity.
               </p>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 border border-primary/20">
+                <span className="text-sm font-medium text-muted-foreground">CAC Registration:</span>
+                <span className="text-sm font-bold text-primary">RC NO. 8524204</span>
+              </div>
             </motion.div>
             
             <motion.div
