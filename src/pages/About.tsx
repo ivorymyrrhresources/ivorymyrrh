@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { Target, Eye, Heart, Users, CheckCircle, ArrowRight, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
-const aboutTeamImg = 'https://i.ibb.co/MdLJcPM/Ivorymyrrh.jpg';
+import ogImageAsset from '@/assets/branding/og-image.jpg.asset.json';
+const aboutTeamImg = ogImageAsset.url;
 
 const values = [
   {

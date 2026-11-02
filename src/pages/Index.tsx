@@ -4,16 +4,29 @@ import { ArrowRight, Leaf, Shield, Truck, Award, Star, CheckCircle } from 'lucid
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
 
-const tomatoesImg = 'https://i.ibb.co/Mk0HxSTb/Ivorymyrrh-1-1.jpg';
-const grindingImg = 'https://i.ibb.co/99sfCYCz/Ivorymyrrh-17-1.jpg';
-const pepperImg = 'https://i.ibb.co/vt6Vwcm/Ivorymyrrh-2-1.jpg';
-const onionImg = 'https://i.ibb.co/Sw9j025S/Ivorymyrrh-3-1.jpg';
-const potatoesImg = 'https://i.ibb.co/RksLH2Sg/Ivorymyrrh-4-1.jpg';
-const yamImg = 'https://i.ibb.co/bRD9Krkg/Ivorymyrrh-5-1.jpg';
-const fishImg = 'https://i.ibb.co/WvZ8j1d1/Ivorymyrrh-6-1.jpg';
-const cowsImg = 'https://i.ibb.co/3yJkYnw7/Ivorymyrrh-7-1.jpg';
-const butcheringImg = 'https://i.ibb.co/rKfZDkZd/Ivorymyrrh-8-1.jpg';
-const processingImg = 'https://i.ibb.co/b5DHNFTV/Ivorymyrrh-9-1.jpg';
+import tomatoesAsset from '@/assets/products/tomatoes.jpg.asset.json';
+import grindingAsset from '@/assets/services/services-grinding.jpg.asset.json';
+import pepperAsset from '@/assets/products/pepper.jpg.asset.json';
+import onionAsset from '@/assets/products/onion.jpg.asset.json';
+import potatoesAsset from '@/assets/products/potatoes.jpg.asset.json';
+import yamAsset from '@/assets/products/yam.jpg.asset.json';
+import fishAsset from '@/assets/products/fish.jpg.asset.json';
+import cowsAsset from '@/assets/products/cows.jpg.asset.json';
+import butcheringAsset from '@/assets/services/butchering.jpg.asset.json';
+import processingAsset from '@/assets/services/processing.jpg.asset.json';
+import ogImageAsset from '@/assets/branding/og-image.jpg.asset.json';
+import aboutPreviewAsset from '@/assets/branding/about-preview.jpg.asset.json';
+
+const tomatoesImg = tomatoesAsset.url;
+const grindingImg = grindingAsset.url;
+const pepperImg = pepperAsset.url;
+const onionImg = onionAsset.url;
+const potatoesImg = potatoesAsset.url;
+const yamImg = yamAsset.url;
+const fishImg = fishAsset.url;
+const cowsImg = cowsAsset.url;
+const butcheringImg = butcheringAsset.url;
+const processingImg = processingAsset.url;
 
 const products = [
   { name: 'Fresh Tomatoes', image: tomatoesImg, description: 'Vine-ripened, premium quality tomatoes' },
@@ -77,7 +90,7 @@ const Index = () => {
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://i.ibb.co/MdLJcPM/Ivorymyrrh.jpg"
+            src={ogImageAsset.url}
             alt="Ivorymyrrh Resources Farm"
             className="w-full h-full object-cover"
           />
@@ -211,7 +224,7 @@ const Index = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-card">
                 <img
-                  src="https://i.ibb.co/tMwrRYGd/Ivory-Myrrh-2.jpg"
+                  src={aboutPreviewAsset.url}
                   alt="Ivorymyrrh Resources - Agricultural Products"
                   className="w-full h-[400px] lg:h-[500px] object-cover"
                 />

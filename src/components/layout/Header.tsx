@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Home, Info, Wrench, ShoppingBag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logoAsset from '@/assets/branding/logo.png.asset.json';
 
 const navLinks = [
   { name: 'Home', path: '/', icon: Home },
@@ -44,7 +45,7 @@ const Header = () => {
               className="overflow-hidden"
             >
               <img
-                src="https://i.ibb.co/4Z6sNmrM/Ivory-Myrrh-2.png"
+                src={logoAsset.url}
                 alt="Ivorymyrrh"
                 width={203}
                 height={109}

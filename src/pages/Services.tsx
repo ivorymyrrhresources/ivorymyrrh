@@ -4,9 +4,15 @@ import { ArrowRight, CheckCircle, Shield, Users, Building, Store } from 'lucide-
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
 
-const butcheringImg = 'https://i.ibb.co/rKfZDkZd/Ivorymyrrh-8-1.jpg';
-const processingImg = 'https://i.ibb.co/8gqcrnTD/Ivorymyrrh-11-1.jpg';
-const grindingImg = 'https://i.ibb.co/bjBbQdQN/Ivorymyrrh-17-1.jpg';
+import butcheringAsset from '@/assets/services/butchering.jpg.asset.json';
+import processingAsset from '@/assets/services/services-processing.jpg.asset.json';
+import grindingAsset from '@/assets/services/services-grinding.jpg.asset.json';
+import servicesHeroAsset from '@/assets/branding/services-hero.jpg.asset.json';
+
+const butcheringImg = butcheringAsset.url;
+const processingImg = processingAsset.url;
+const grindingImg = grindingAsset.url;
+const servicesHeroImg = servicesHeroAsset.url;
 
 const services = [
   {
@@ -182,7 +188,7 @@ const Services = () => {
             >
               <div className="rounded-2xl overflow-hidden shadow-elevated">
                 <img
-                  src="https://i.ibb.co/5h1VjPhb/Ivory-Myrrh-1.jpg"
+                  src={servicesHeroImg}
                   alt="Hygiene Standards"
                   className="w-full h-full object-cover aspect-square"
                 />
