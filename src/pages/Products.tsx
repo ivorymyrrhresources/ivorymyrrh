@@ -4,20 +4,35 @@ import { ArrowRight, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
 
-const tomatoesImg = 'https://i.ibb.co/Mk0HxSTb/Ivorymyrrh-1-1.jpg';
-const pepperImg = 'https://i.ibb.co/vt6Vwcm/Ivorymyrrh-2-1.jpg';
-const onionImg = 'https://i.ibb.co/Sw9j025S/Ivorymyrrh-3-1.jpg';
-const potatoesImg = 'https://i.ibb.co/RksLH2Sg/Ivorymyrrh-4-1.jpg';
-const yamImg = 'https://i.ibb.co/bRD9Krkg/Ivorymyrrh-5-1.jpg';
-const fishImg = 'https://i.ibb.co/WvZ8j1d1/Ivorymyrrh-6-1.jpg';
-const cowsImg = 'https://i.ibb.co/3yJkYnw7/Ivorymyrrh-7-1.jpg';
-const driedFishImg = 'https://i.ibb.co/fzSx21gc/Ivorymyrrh-10-1.jpg';
-const goatMeatImg = 'https://i.ibb.co/B2bNyHdV/Ivorymyrrh-11-1.jpg';
-const riceImg = 'https://i.ibb.co/ccfj7bqn/Ivorymyrrh-12-1.jpg';
-const beansImg = 'https://i.ibb.co/tM5LWws3/Ivorymyrrh-13-1.jpg';
-const garriImg = 'https://i.ibb.co/B2Vrg8dv/Ivorymyrrh-14-1.jpg';
-const palmOilImg = 'https://i.ibb.co/sJNY3pqg/Ivorymyrrh-15-1.jpg';
-const groundnutOilImg = 'https://i.ibb.co/4wvK1jhv/Ivorymyrrh-16-1.jpg';
+import tomatoesAsset from '@/assets/products/tomatoes.jpg.asset.json';
+import pepperAsset from '@/assets/products/pepper.jpg.asset.json';
+import onionAsset from '@/assets/products/onion.jpg.asset.json';
+import potatoesAsset from '@/assets/products/potatoes.jpg.asset.json';
+import yamAsset from '@/assets/products/yam.jpg.asset.json';
+import fishAsset from '@/assets/products/fish.jpg.asset.json';
+import cowsAsset from '@/assets/products/cows.jpg.asset.json';
+import driedFishAsset from '@/assets/products/dried-catfish.jpg.asset.json';
+import goatMeatAsset from '@/assets/products/goat-meat.jpg.asset.json';
+import riceAsset from '@/assets/products/rice.jpg.asset.json';
+import beansAsset from '@/assets/products/beans.jpg.asset.json';
+import garriAsset from '@/assets/products/garri.jpg.asset.json';
+import palmOilAsset from '@/assets/products/palm-oil.jpg.asset.json';
+import groundnutOilAsset from '@/assets/products/groundnut-oil.jpg.asset.json';
+
+const tomatoesImg = tomatoesAsset.url;
+const pepperImg = pepperAsset.url;
+const onionImg = onionAsset.url;
+const potatoesImg = potatoesAsset.url;
+const yamImg = yamAsset.url;
+const fishImg = fishAsset.url;
+const cowsImg = cowsAsset.url;
+const driedFishImg = driedFishAsset.url;
+const goatMeatImg = goatMeatAsset.url;
+const riceImg = riceAsset.url;
+const beansImg = beansAsset.url;
+const garriImg = garriAsset.url;
+const palmOilImg = palmOilAsset.url;
+const groundnutOilImg = groundnutOilAsset.url;
 
 const products = [
   {

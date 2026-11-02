@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
+import logoAsset from '@/assets/branding/logo.png.asset.json';
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
             <Link to="/" aria-label="Ivorymyrrh home" className="group">
               <div>
                 <img
-                  src="https://i.ibb.co/4Z6sNmrM/Ivory-Myrrh-2.png"
+                  src={logoAsset.url}
                   alt="Ivorymyrrh"
                   width={203}
                   height={109}
