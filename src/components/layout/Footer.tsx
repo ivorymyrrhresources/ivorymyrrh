@@ -12,7 +12,7 @@ const Footer = () => {
             <Link to="/" aria-label="Ivorymyrrh home" className="group">
               <div>
                 <img
-                  src={logoAsset.url}
+                  src="https://res.cloudinary.com/titznrnk/image/upload/v1793674519/Logo.png"
                   alt="Ivorymyrrh"
                   width={203}
                   height={109}
@@ -90,10 +90,10 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-brand shrink-0" />
                 <div className="flex flex-col">
                   <a href="tel:+2347051712618" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-                    +234 705 171 2618 (WhatsApp)
+                    070 5171 2618 (WhatsApp)
                   </a>
-                  <a href="tel:09056535430" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-                    090 5653 5430
+                  <a href="tel:09156535430" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                    091 5653 5430
                   </a>
                 </div>
               </li>

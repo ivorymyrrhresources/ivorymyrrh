@@ -7,24 +7,20 @@ import SectionHeading from '@/components/common/SectionHeading';
 import tomatoesAsset from '@/assets/products/tomatoes.jpg.asset.json';
 import grindingAsset from '@/assets/services/services-grinding.jpg.asset.json';
 import pepperAsset from '@/assets/products/pepper.jpg.asset.json';
-import onionAsset from '@/assets/products/onion.jpg.asset.json';
-import potatoesAsset from '@/assets/products/potatoes.jpg.asset.json';
-import yamAsset from '@/assets/products/yam.jpg.asset.json';
-import fishAsset from '@/assets/products/fish.jpg.asset.json';
 import cowsAsset from '@/assets/products/cows.jpg.asset.json';
 import butcheringAsset from '@/assets/services/butchering.jpg.asset.json';
 import processingAsset from '@/assets/services/processing.jpg.asset.json';
 import ogImageAsset from '@/assets/branding/og-image.jpg.asset.json';
 import aboutPreviewAsset from '@/assets/branding/about-preview.jpg.asset.json';
 
-const tomatoesImg = tomatoesAsset.url;
+const tomatoesImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793673036/Ivorymyrrh_Tomato_Market_Display_1.png";
 const grindingImg = grindingAsset.url;
-const pepperImg = pepperAsset.url;
-const onionImg = onionAsset.url;
-const potatoesImg = potatoesAsset.url;
-const yamImg = yamAsset.url;
-const fishImg = fishAsset.url;
-const cowsImg = cowsAsset.url;
+const pepperImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793674402/Untitled_design_1.jpg";
+const onionImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793694710/Ivorymyrrh.jpg";
+const potatoesImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793694956/Ivorymyrrh_1.jpg";
+const yamImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793695280/Ivorymyrrh_2.jpg";
+const fishImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793695482/Ivorymyrrh_3.jpg";
+const cowsImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793699774/Ivorymyrrh_5.jpg";
 const butcheringImg = butcheringAsset.url;
 const processingImg = processingAsset.url;
 
@@ -90,7 +86,7 @@ const Index = () => {
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={ogImageAsset.url}
+            src="https://res.cloudinary.com/titznrnk/image/upload/v1793671731/Moody_Butcher_s_Market_Workspace_1.png"
             alt="Ivorymyrrh Resources Farm"
             className="w-full h-full object-cover"
           />
@@ -224,7 +220,7 @@ const Index = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-card">
                 <img
-                  src={aboutPreviewAsset.url}
+                  src="https://res.cloudinary.com/titznrnk/image/upload/v1793673545/Untitled_Design.jpg"
                   alt="Ivorymyrrh Resources - Agricultural Products"
                   className="w-full h-[400px] lg:h-[500px] object-cover"
                 />

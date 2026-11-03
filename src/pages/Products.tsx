@@ -6,10 +6,6 @@ import SectionHeading from '@/components/common/SectionHeading';
 
 import tomatoesAsset from '@/assets/products/tomatoes.jpg.asset.json';
 import pepperAsset from '@/assets/products/pepper.jpg.asset.json';
-import onionAsset from '@/assets/products/onion.jpg.asset.json';
-import potatoesAsset from '@/assets/products/potatoes.jpg.asset.json';
-import yamAsset from '@/assets/products/yam.jpg.asset.json';
-import fishAsset from '@/assets/products/fish.jpg.asset.json';
 import cowsAsset from '@/assets/products/cows.jpg.asset.json';
 import driedFishAsset from '@/assets/products/dried-catfish.jpg.asset.json';
 import goatMeatAsset from '@/assets/products/goat-meat.jpg.asset.json';
@@ -19,20 +15,20 @@ import garriAsset from '@/assets/products/garri.jpg.asset.json';
 import palmOilAsset from '@/assets/products/palm-oil.jpg.asset.json';
 import groundnutOilAsset from '@/assets/products/groundnut-oil.jpg.asset.json';
 
-const tomatoesImg = tomatoesAsset.url;
-const pepperImg = pepperAsset.url;
-const onionImg = onionAsset.url;
-const potatoesImg = potatoesAsset.url;
-const yamImg = yamAsset.url;
-const fishImg = fishAsset.url;
-const cowsImg = cowsAsset.url;
-const driedFishImg = driedFishAsset.url;
-const goatMeatImg = goatMeatAsset.url;
-const riceImg = riceAsset.url;
-const beansImg = beansAsset.url;
-const garriImg = garriAsset.url;
-const palmOilImg = palmOilAsset.url;
-const groundnutOilImg = groundnutOilAsset.url;
+const tomatoesImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793673036/Ivorymyrrh_Tomato_Market_Display_1.png";
+const pepperImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793674402/Untitled_design_1.jpg";
+const onionImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793694710/Ivorymyrrh.jpg";
+const potatoesImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793694956/Ivorymyrrh_1.jpg";
+const yamImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793695280/Ivorymyrrh_2.jpg";
+const fishImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793695482/Ivorymyrrh_3.jpg";
+const cowsImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793699774/Ivorymyrrh_5.jpg";
+const driedFishImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793699483/Ivorymyrrh_4.jpg";
+const goatMeatImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793700294/Ivorymyrrh_6.jpg";
+const riceImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793700889/Ivorymyrrh_7.jpg";
+const beansImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793701309/Ivorymyrrh_8.jpg";
+const garriImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793701572/Ivorymyrrh_9.jpg";
+const palmOilImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793701907/Ivorymyrrh_10.jpg";
+const groundnutOilImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793702211/Ivorymyrrh_11.jpg";
 
 const products = [
   {

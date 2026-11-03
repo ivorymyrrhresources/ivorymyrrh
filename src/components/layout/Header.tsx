@@ -45,7 +45,7 @@ const Header = () => {
               className="overflow-hidden"
             >
               <img
-                src={logoAsset.url}
+                src="https://res.cloudinary.com/titznrnk/image/upload/v1793674519/Logo.png"
                 alt="Ivorymyrrh"
                 width={203}
                 height={109}
