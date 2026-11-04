@@ -4,14 +4,11 @@ import { ArrowRight, CheckCircle, Shield, Users, Building, Store } from 'lucide-
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
 
-import butcheringAsset from '@/assets/services/butchering.jpg.asset.json';
-import processingAsset from '@/assets/services/services-processing.jpg.asset.json';
-import grindingAsset from '@/assets/services/services-grinding.jpg.asset.json';
 import servicesHeroAsset from '@/assets/branding/services-hero.jpg.asset.json';
 
-const butcheringImg = butcheringAsset.url;
-const processingImg = processingAsset.url;
-const grindingImg = grindingAsset.url;
+const butcheringImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793784913/662_1.jpg";
+const processingImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793785241/Ivorymyrrh_12.jpg";
+const grindingImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793785752/Ivorymyrrh_13.jpg";
 const servicesHeroImg = servicesHeroAsset.url;
 
 const services = [

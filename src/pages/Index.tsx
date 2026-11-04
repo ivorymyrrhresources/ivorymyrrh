@@ -5,24 +5,21 @@ import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/common/SectionHeading';
 
 import tomatoesAsset from '@/assets/products/tomatoes.jpg.asset.json';
-import grindingAsset from '@/assets/services/services-grinding.jpg.asset.json';
 import pepperAsset from '@/assets/products/pepper.jpg.asset.json';
 import cowsAsset from '@/assets/products/cows.jpg.asset.json';
-import butcheringAsset from '@/assets/services/butchering.jpg.asset.json';
-import processingAsset from '@/assets/services/processing.jpg.asset.json';
 import ogImageAsset from '@/assets/branding/og-image.jpg.asset.json';
 import aboutPreviewAsset from '@/assets/branding/about-preview.jpg.asset.json';
 
 const tomatoesImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793673036/Ivorymyrrh_Tomato_Market_Display_1.png";
-const grindingImg = grindingAsset.url;
+const grindingImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793785752/Ivorymyrrh_13.jpg";
 const pepperImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793674402/Untitled_design_1.jpg";
 const onionImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793694710/Ivorymyrrh.jpg";
 const potatoesImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793694956/Ivorymyrrh_1.jpg";
 const yamImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793695280/Ivorymyrrh_2.jpg";
 const fishImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793695482/Ivorymyrrh_3.jpg";
 const cowsImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793699774/Ivorymyrrh_5.jpg";
-const butcheringImg = butcheringAsset.url;
-const processingImg = processingAsset.url;
+const butcheringImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793784913/662_1.jpg";
+const processingImg = "https://res.cloudinary.com/titznrnk/image/upload/v1793785241/Ivorymyrrh_12.jpg";
 
 const products = [
   { name: 'Fresh Tomatoes', image: tomatoesImg, description: 'Vine-ripened, premium quality tomatoes' },
